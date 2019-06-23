@@ -44,5 +44,5 @@ Complete the algorithms discussed below. You can write these in whichever langua
     * This function will take numeric, lower case and upper case characters to a separate list
     * Each list will be sorted, then lists will be merged to new list.
     * This function will return a sorted values based on numeric, lower case and upper case order.
-
- 
+    * NOTE: exceptional cases were not handled.
+    
