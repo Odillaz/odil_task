@@ -10,7 +10,7 @@ def alphan_sort(val):
         if (char.islower()):
             lowercase.append(char)
         
-        # numbers
+        # numbers, exception case not handled
         if (char.isnumeric()):
             numbers.append(char)
 
@@ -26,9 +26,9 @@ def alphan_sort(val):
 
 print (alphan_sort('A11a4'))
 
-# unit tests
-# assert (alphan_sort('A11a4')) == '411aA'
-# assert (alphan_sort('BASv2s5w46z00')) == '02546asvzBAS'
-# assert (alphan_sort('aBcDeFG264598')) == '264598aceBDFG'
-# assert (alphan_sort('abcdef')) == 'abcdef'
-# assert (alphan_sort('ABCDEF')) == 'ABCDEF'
+# unit tests, because exception case is not handled
+assert (alphan_sort('A11a4')) == '114aA'
+assert (alphan_sort('BASv2s5w46z00')) == '02456asvzBAS'
+assert (alphan_sort('aBcDeFG264598')) == '245689aceBDFG'
+assert (alphan_sort('abcdef')) == 'abcdef'
+assert (alphan_sort('ABCDEF')) == 'ABCDEF'
